@@ -1,14 +1,17 @@
-# you may include comments here 
-eye 0 0 0
-look 1 0 0
+recursionlevel 2
+eye 0.5 -0.5 0.5
+look 5 -5 5
 up 0 0 1 
 d -1
-bounds -1 1 -1 1 
+bounds -0.3 0.3 -0.3 0.3 
 res 256 256
 ambient 0.1 0.1 0.1 
-light 0 0 0 1 0.3 0.3 0.3 
-light 1 0 1 1 1.0 0.0 0.0 
-light 1 0.7 -0.7 1 0.0 1.0 0.0
-light 1 -0.7 -0.7 1 0.0 0.0 1.0 
-sphere 2 0.5 0.5 0.5 0.2 0.2 0.2 0.7 0.7 0.7 0 0 0 0 0 0
-sphere 10 0 0 5 0.2 0.2 0.2 0.7 0.7 0.7 0.5 0.5 0.5 1.0 1.0 1.0
+light 100 120 0 1 0.8 0.8 0.8
+model 1 0 0 0 0.003 1.1 0 0.5 20 mothership.obj
+model 1 0 0 0 0.5 1.1 0 -0.2 20 ship.obj
+model 1 0 0 0 0.5 1.1 0 0.8 20 ship.obj
+model 1 0 0 0 0.5 1.5 0 0.5 20 ship.obj
+sphere 0 0 0 1.0 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.0 0.0 0.0 0 earth-xsmall.ppm 0 0 90
+sphere -7 -0.5 0 0.1 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.0 0.0 0.0 0 moon-xsmall.ppm
+sphere 5 -5 5 5 0.1 0.1 0.1 0.7 0.7 0.7 0.9 0.9 0.9 0.7 0.7 0.7 0 metal.ppm
+model 0 1 0 0 500 0 0 0 0 starBox.obj 200

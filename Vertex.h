@@ -1,35 +1,39 @@
 #ifndef VERTEX_INCLUDED
 #define VERTEX_INCLUDED
 #include <string>
+#include <vector>
 
 
 class Vertex{
   public:
   
   //actual data container
-    double point[3];
+    std::vector<double> point;
+  
+    std::vector<int> faces;
   
 	//Explicit constructor
 	Vertex(double x, double y, double z) {
-        point[0]=x;
-        point[1]=y;
-        point[2]=z;
+        point.push_back(x);
+        point.push_back(y);
+        point.push_back(z);
     
     }
 	//Default constructor
 	Vertex() {
-        point[0]=0;
-        point[1]=0;
-        point[2]=0;
+        point.push_back(0);
+        point.push_back(0);
+        point.push_back(0);
     }
 	//Destructor (needs nothing)
 	~Vertex(){
     }
   
   void update(double x, double y, double z) {
-     point[0]=x;
-     point[1]=y;
-     point[2]=z; 
+     point.clear();
+     point.push_back(x);
+     point.push_back(y);
+     point.push_back(z);
   }
 	
 

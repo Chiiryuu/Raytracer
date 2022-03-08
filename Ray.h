@@ -13,6 +13,7 @@ class Ray{
     std::vector<double> direction;
     std::vector<double> hitPoint;
     bool hit = false;
+    bool invalid = false;
   
 	//Explicit constructor
 	Ray(double orgX, double orgY, double orgZ, double dirX, double dirY, double dirZ) {
@@ -29,15 +30,7 @@ class Ray{
     }
 	//Default constructor
 	Ray() {
-        origin.push_back(0);
-        origin.push_back(0);
-        origin.push_back(0);
-    
-        
-    
-        direction.push_back(1);
-        direction.push_back(0);
-        direction.push_back(0);
+        invalid = true;
     }
 	//Destructor (needs nothing)
 	~Ray(){
